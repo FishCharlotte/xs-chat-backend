@@ -1,10 +1,10 @@
 {
-    "host": "localhost",
+    "host": "",
     "user": "",
     "password": "",
-    "storage":"./db.sqlite",
+    "storage":"./db/db.sqlite",
     "dialect": "sqlite",
-    "databaseName": "db.sqlite",
+    "databaseName": "./db/db.sqlite",
     "pool": {
         "max": 20,
         "min": 0,

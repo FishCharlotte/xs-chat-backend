@@ -37,6 +37,18 @@ npm run dev
 node app.js
 ```
 
+构建镜像（Docker Compose）：
+
+```bash
+docker-compose build
+```
+
+启动服务器（Docker Compose）：
+
+```bash
+docker-compose up -d
+```
+
 ## 许可证
 
 MIT License

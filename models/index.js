@@ -3,9 +3,9 @@ const config = require('../config/database.json');
 const applyExtraSetup = require('./extra_setup');
 
 const sequelize = new Sequelize(config.databaseName, config.user, config.password, {
-    logging:false,
-    storage: config.storage,
-    host: config.host,
+    logging: false,
+    // storage: config.storage,
+    // host: config.host,
     dialect: config.dialect,
     pool: {
         max: config.pool.max,
@@ -44,7 +44,6 @@ sequelize.sync({
     // alter: true,
 })
     .then(() => {
-
         console.log('同步成功')
     })
     .catch(err => console.log('同步失败: ', err))

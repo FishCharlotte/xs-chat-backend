@@ -12,7 +12,10 @@ function main(args) {
     const app = new Koa();
     app.keys = ['dieueyf7huienejnfef']
 
-    const store = redisStore();
+    const store = redisStore({
+        host: 'redis',
+        port: 6379
+    });
 
     app
         .use(session({
@@ -27,7 +30,9 @@ function main(args) {
         httpServer = createServer(app.callback());
         initSocket(httpServer, app, store).then(() => {});
 
-        httpServer.listen(13000);
+        httpServer.listen(3000);
+
+        console.log('Server is running on http://localhost:3000');
     }
 
     return { app, httpServer }

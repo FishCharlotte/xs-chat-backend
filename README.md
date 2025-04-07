@@ -37,6 +37,18 @@ Build the production version:
 node app.js
 ```
 
+Build the image (Docker Compose):
+
+```bash
+docker-compose build
+```
+
+Start the server (Docker Compose):
+
+```bash
+docker-compose up -d
+```
+
 ## License
 
 MIT License
