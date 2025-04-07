@@ -1,0 +1,40 @@
+{
+  "name": "online-xs-chat-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'test/**/*.test.js'",
+    "test:watch": "mocha --watch 'test/**/*.test.js'",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@koa/multer": "^3.0.2",
+    "@koa/router": "^12.0.1",
+    "amqplib": "^0.10.4",
+    "bcryptjs": "^2.4.3",
+    "crypto-js": "^4.2.0",
+    "express": "^4.19.2",
+    "joi": "^17.12.2",
+    "koa": "^2.15.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-generic-session": "^2.3.1",
+    "koa-redis": "^4.0.1",
+    "koa-send": "^5.0.1",
+    "koa-session": "^6.4.0",
+    "sequelize": "^6.37.1",
+    "socket.io": "^4.7.5",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.5.2",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}

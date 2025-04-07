@@ -1,0 +1,8 @@
+{
+  "saveDir": {
+    "avatar": "./data/avatar"
+  },
+  "baseUrl": {
+    "avatar": "http://xxschat.online/avatar"
+  }
+}
